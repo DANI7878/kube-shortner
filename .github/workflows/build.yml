@@ -15,7 +15,7 @@ jobs:
       matrix:
         service: [api, worker]
     env:
-      IMAGE: ghcr.io/DANI7878/shortener-${{ matrix.service }}
+      IMAGE: ghcr.io/DANI7878/kube-shortener-${{ matrix.service }}
     steps:
       - uses: actions/checkout@v4
       - uses: docker/setup-qemu-action@v3
